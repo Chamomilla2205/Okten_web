@@ -6,7 +6,8 @@ body{
     height: 100px;
     background: orange;
     float: left;
-    padding-left: 10px;
+    border-left: 3px solid black;
+    border-top: 3px solid black;
     
 }
 .red{
@@ -14,6 +15,7 @@ body{
     height: 300px;
     background: red;
     float: left;
+    border-left: 3px solid black;
 }
 .green{
     width: 168px;
@@ -39,5 +41,12 @@ body{
     height: 510px;
     background: black;
     margin: 10px;
-
+}
+.orange2{
+    width: 690px;
+    height: 100px;
+    background: orange;
+    float: left;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
 }
