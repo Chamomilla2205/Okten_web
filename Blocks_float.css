@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+}
+.orange{
+    width: 690px;
+    height: 100px;
+    background: orange;
+    float: left;
+    padding-left: 10px;
+    
+}
+.red{
+    width: 168px;
+    height: 300px;
+    background: red;
+    float: left;
+}
+.green{
+    width: 168px;
+    height: 300px;
+    background: green;
+    float: left;
+}
+.blue{
+    width: 168px;
+    height: 300px;
+    background: blue;
+    float: left;
+}
+.little_black{
+    width: 168px;
+    height: 300px;
+    background: black;
+    float: left;
+}
+
+.big_black{
+    width: 700px;
+    height: 510px;
+    background: black;
+    margin: 10px;
+
+}
