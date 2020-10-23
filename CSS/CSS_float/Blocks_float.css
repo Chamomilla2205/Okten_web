@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+}
+.orange{
+    width: 100%;
+    height: 20%;
+    background: orange;
+    float: left;
+    clear: both;
+    
+    
+}
+.red{
+    width: 25%;
+    height: 300px;
+    background: red;
+    float: left;
+    
+}
+.green{
+    width: 25%;
+    height: 300px;
+    background: green;
+    float: left;
+}
+.blue{
+    width: 25%;
+    height: 300px;
+    background: blue;
+    float: left;
+}
+.little_black{
+    width: 25%;
+    height: 300px;
+    background: black;
+    float: left;
+}
+
+.big_black{
+    width: 700px;
+    height: 500px;
+    background: black;
+    padding: 5px;
+}
+.orange2{
+    width: 100%;
+    height: 20%;
+    background: orange;
+    float: left;
+    clear: both;
+    
+}
