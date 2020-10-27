@@ -2,9 +2,9 @@ body{
 margin: 0;
 padding: 0;
 }
-a{
-    color: white;
+a{    
     text-decoration: none;
+    color: white;
 }
 .ukr{
     display: flex;
@@ -46,6 +46,8 @@ a{
     margin-left: 40px;
 }
 .LOGO{
+    color: white;
+    font-size: 12px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -68,14 +70,20 @@ a{
         align-items: center;
 }
 .UKR_PRAVDA{
+    color: white;
     font-size: 35px;
 }
 .aside1{
     font-size: 12px;
 }
 .logo_right{
+    width: 145px;
+    font-size: 12px;
     margin-top: 35px;
     margin-right: 40px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
 }
 .menu2{
     width: 800px;
@@ -86,3 +94,52 @@ a{
     flex-direction: row;
     justify-content: space-around;
 }
+.COVID_statistic{
+    margin: 0 40px
+}
+.COVID_title{
+    color: rgb(141, 17, 17);
+}
+.COVID{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.COVID_BOX{
+    color: black;
+    width: 270px;
+    height: 45px;
+    border: 1px solid silver;
+    padding: 15px;
+}
+.title{
+    font-size: 11px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.prescription{
+    width: 270px;
+}
+.result{
+    font-size: 35px;
+}
+.grafics{
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: inherit;
+}
+.data_source{
+    font-size: 14px;
+    color: black;
+}
+.grafic{
+    width: 4px;
+    height: 25px;
+    background: tomato;
+    margin: 0 4px;
+}
+
+
+
