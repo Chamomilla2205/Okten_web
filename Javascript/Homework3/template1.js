@@ -9,25 +9,25 @@ console.log(document.getElementById('rules'));
 
 // - замініть текст параграфа з id 'content' на будь-який інший
 
-let id1 = document.getElementById('content');
-id1.innerText = 'Нарешті хоч якийсь прогрес';
-console.log(id1)
+// let id1 = document.getElementById('content');
+// id1.innerText = 'Нарешті хоч якийсь прогрес';
+// console.log(id1)
 
 
 // - замініть текст параграфа з id 'rules' на будь-який інший
 
-let id2 = document.getElementById('rules');
-id2.innerText = 'Я закінчу цей курс і знайду класну роботу';
+// let id2 = document.getElementById('rules');
+// id2.innerText = 'Я закінчу цей курс і знайду класну роботу';
 
 // - змініть кожному елементу колір фону на червоний
 
-id1.style.color = 'red';
-id2.style.color = 'red';
+// id1.style.color = 'red';
+// id2.style.color = 'red';
 
 // - змініть кожному елементу колір тексту на синій
 
-id1.style.color = 'blue';
-id2.style.color = 'blue';
+// id1.style.color = 'blue';
+// id2.style.color = 'blue';
 
 // -
 // - отримати весь список класів елемента з id=rules і вивести їх в console.log

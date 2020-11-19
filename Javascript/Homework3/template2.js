@@ -92,6 +92,14 @@
 //     }
 // }
 
+let ask = prompt('Which color you choose?');
+let letter = prompt('Which color of letters?')
+let body = document.getElementsByTagName('body');
+for (let w of body) {
+        w.style.background = ask;
+        w.style.color = letter;
+}
+
 // -- отримує елемент з класом content_1 та заміняє  в ньому тест на довільний. Текст отримати з prompt()
 // let firstClass = document.getElementsByClassName('content_1');
 // firstClass.contentText = 'Hello';
