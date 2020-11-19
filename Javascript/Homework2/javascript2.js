@@ -231,21 +231,75 @@
 
 
 // - Відтворити роботу годинника, відрахувавши 2 хвилини (2 цикли! 1й - хвилини, 2й - секунди)
-// const time = 59;
-// const timeHours = 23;
+
+// const TYPE_COUNT = 59;
 // let sec = 0;
 // let minute = 0;
 // let hour = 0;
-// for ( i = 0; i <= timeHours ; i++) {
+// for ( i = 0; i <= 23 && hour !== 3 && min !==21 ; i++) {
 //     console.log('hours :', hour++)
-//     for(i = 0; i <= time ; i++) {
+//     for(i = 0; i <= i <= 23 && hour !== 3 && min !==21  ; i++) {
 //         console.log('minutes :', minute++)
-//         for (i = 0; i <= time; i++) {
+//         for (i = 0; i <= TYPE_COUNT; i++) {
 //              console.log('seconds :', sec++)
+//              s++;
 //         }
 //         sec = 0;
 //     }
+//     min = 0;
 // }
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    console.log("DOM fully loaded and parsed");
+  
+const clock = document.getElementById('clock');
+const color = document.getElementById('color');
+
+let sec = 0;
+let minute = 0;
+let hour = 0;
+
+setInterval( () => {
+    sec ++;
+    if ( sec === 60) {
+        minute++;
+        sec = 0;
+    }
+
+    if ( minute === 60){
+        hour++;
+        min = 0;
+    }
+
+    if ( hour === 24){
+        hour++;
+        hour = 0;
+    }
+    let h = hour.toString();
+    let m = minute.toString();
+    let s = sec.toString();
+
+    if (h.length < 2){
+        h = '0' + h;
+    }
+
+    if (m.length < 2){
+        m = '0' + m;
+    }
+
+    if (s.length < 2){
+        s = '0' + s;
+    }
+    console.log(h);
+    let timer = h + ':' + m + ':' + s;
+    let myColor = '#' + h + m + s;
+    console.log(timer);
+    clock.innerText = timer;
+    color.innerText = myColor;
+
+    document.body.style.background = myColor;
+}, 1000)
+});
 // - Відтворити роботу годинника, відрахувавши  2 години 20 хвилини (3 цикли! 1й - години, 2й - хвилини, 3й - секунди)
 // Додатково
 // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
@@ -669,14 +723,7 @@
 
 //   5 масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки. обрахувати середній чек.????????????????????????????????
 
-// const arr = [100,250,50,168,120,345,188];
 
-// let result = 0;
-// let a = 1;
-// for (i = 0; i < arr.length; i++) {
-// result = result + arr[i];
-// } 
-// console.log(result)
 
 // const arr = [100,250,50,168,120,345,188];
 // let result = 0;
@@ -722,18 +769,3 @@
 // }
 // console.log(Mass)
 
-// let str = 'HELLO WORLD';
-// let indexOf = str.indexOf('L')
-// console.log(indexOf)
-// let lastIndexOf = str.lastIndexOf('L');
-// console.log(lastIndexOf)
-
-// let charAt = str.charAt(8)
-// console.log(charAt)
-// let concar = str.concat(' FROM UKRAINE')
-// console.log(concar)
-// let replace = str.replace('HELLO','NICE')
-// console.log(replace)
-// let mass = ['R','o','m','a'];
-// let s = mass.join(' say hello to ')
-// console.log(s)
